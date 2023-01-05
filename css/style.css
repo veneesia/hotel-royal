@@ -1,0 +1,1514 @@
+/* ============================================== */
+/* ----------------- General CSS ---------------- */
+/* ============================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #343434;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: #212121;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus{
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+p{
+    color: #656565;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    padding: 0;
+    color: #656565;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767.98px){
+    h2{
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
+@media (max-width: 575.98px){
+    h2{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.back-to-top{
+    position: fixed;
+    display: none;
+    background: #ff0;
+    color: #0c0909;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 18px;
+    border-radius: 0;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+
+.back-to-top:hover{
+    color: yellow;
+    background: #212121;
+    border: 2px solid #ff0;
+}
+
+
+.back-to-top i{
+    padding-top: 10px;
+}
+
+/* ================================================= */
+/* ---------------- Nav Header CSS ----------------- */
+/* ================================================= */
+
+#header{
+    position: relative;
+    height: 60px;
+    background: #212121;
+}
+
+#header .logo{
+    padding-left: 25px;
+    left: 0;
+    display: inline-block;
+    position: absolute;
+    line-height: 55px;
+}
+
+#header .logo img{
+    max-height: 40px;
+}
+
+.main-menu{
+    padding: 0 130px;
+    width: 100%;
+    text-align: center; 
+}
+
+.main-menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu ul li{
+    display: inline-block;
+}
+
+.main-menu ul li:hover a,
+.main-menu ul li.active a{
+    color: #ffffff;
+} 
+
+.main-menu ul li a{
+    color: #ff0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0 10px;
+    line-height: 60px;
+    display: block;
+    transition: color .25s ease, background-color .25s ease;
+}
+
+.mobile-menu-btn{
+    color: #ff0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 57px;
+    display: none;
+    white-space: nowrap;
+}
+
+.mobile-menu-btn i{
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: none;
+    background: #222;
+    border-top: #343434;
+} 
+
+.mobile-menu .top-menu{
+    display: block;
+}
+
+.mobile-menu .top-menu ul{
+    padding: 0;
+}
+
+.mobile-menu .top-menu ul li{
+    display: block;
+    text-align: center;
+}
+
+.mobile-menu .top-menu ul li a{
+    padding: 0;
+    line-height: 40px;
+}
+
+.mobile-menu .top-menu ul li a:hover{
+    text-decoration: none;
+}
+
+.phone{
+    position: absolute;
+    padding-right: 25px;
+    padding-left: 10px;
+    right: 0;
+    color: #ff0;
+    line-height: 60px;
+    cursor: pointer;
+    transition: color 0.25s ease;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.phone:hover{
+    color: #fff;
+}
+
+.phone i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 575.98px){
+    #header .logo{
+        padding-left: 5px;
+    }
+    #header .phone{
+        display: none;
+    }
+    #header .mobile-menu-btn{
+        padding-right: 5px;
+        display: block;
+        text-align: right;
+        font-size: 20px;
+        line-height: 55px;
+    }
+    .main-menu{
+        padding: 0 30px;
+    }
+}
+@media (max-width: 1199.98px){
+    .main-menu{
+        display: none;
+    }
+    .mobile-menu-btn{
+        display: block;
+    }
+}
+
+/* ================================================= */
+/* --------------- Header Slider Style ------------- */
+/* ================================================= */
+
+#headerSlider{
+    position: relative;
+    max-width: 100%;
+    max-height: calc(100vh - 60px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#headerSlider img{
+    width: 100%;
+}
+
+#headerSlider .carousel-caption{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+#headerSlider .carousel-caption h1{
+    color: yellow;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 767.98px){
+    #headerSlider .carousel-caption h1{
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width: 575.98px)
+{
+    #headerSlider .carousel-caption h1{
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 1;
+    }
+}
+/* ================================================= */
+/* ----------------- Search Style ------------------ */
+/* ================================================= */
+
+#search{
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 0 20px 0;
+}
+
+@media (max-width: 767.98px){
+    #search{
+        padding: 30px 0 35px 0;
+    }
+}
+
+@media (max-width: 575.98px){
+    #search{
+        padding: 30px 0 35px 0;
+    }
+    #search .kid{
+        margin-top: 15px;
+    }
+}
+
+#search label{
+    font-size: 14px;
+    font-weight: 600;
+}
+.form-control{
+    color: #ff0;
+}
+label{
+    color: #ff0;
+    margin-left: 5px;
+}
+#search .input-group-text{
+    border-radius: 0;
+    background-color: #ff0;
+    outline-color: #ff0;
+    border-color: rgba(0, 0, 0, 0.8);
+    color: #222;
+}
+
+#search input,
+#search select,
+#search button{
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #ff0;
+    outline-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.8);
+    color: #222;
+}
+
+#search input:focus,
+#search select:focus,
+#search button:focus{
+    border-color: yellow;
+}
+select{
+    color: #ff0;
+}
+#search .btn{
+    margin-top: 31px;
+    color: #222;
+    background: #ff0;
+    transition: 0.4s ease;
+}
+
+#search .btn:hover{
+    color: #ff0;
+    background: #222;
+    border: 2px solid #ff0;
+}
+
+#search .dropdown-menu{
+    width: 230px;
+}
+
+@media (max-width: 767.98px){
+    #search .btn{
+        margin-top: 15px;
+    }
+    #search .kid{
+        margin-top: 15px;
+    }
+}
+
+/* ================================================= */
+/* ---------------- Welcome Section ---------------- */
+/* ================================================= */
+
+#welcome {
+    position: relative;
+    padding: 45px 0 60px 0;
+    background: #212121;
+}
+
+.welcome-header p{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: #ddd;
+}
+
+#welcome .img-cols,
+#welcome .content-cols {
+    padding: 0;
+}
+
+#welcome .content-cols {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#welcome .img-col,
+#welcome .content-col {
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#welcome .content-col {
+    background: transparent;
+    padding: 30px
+}
+
+#welcome .img-col {
+    overflow: hidden;
+}
+
+#welcome .img-col img {
+    transition: 0.3s;
+    width: 100%;
+}
+
+#welcome .img-col:hover img {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#welcome .content-col h3 {
+    color: #FF0;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767.98px) {
+    #welcome .content-col {
+        text-align: center;
+    }
+
+    #welcome .content-col h3 {
+        font-weight: 400;
+        margin-top: 15px;
+    }
+}
+
+#welcome .content-col p {
+    color: #ddd;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#welcome .content-col a {
+    display: inline-block;
+    background: #FF0;
+    font-weight: 400;
+    color: #222222;
+    padding: 10px 30px;
+}
+
+#welcome .content-col a:hover {
+    border: 2px solid #ff0;
+    background: transparent;
+    color: #ff0;
+}
+
+#welcome .content-col a:focus {
+    color: #fff;
+}
+
+/* ================================================= */
+/* -------------- Section Header Style ------------- */
+/* ================================================= */
+
+.section-header{
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-header h2{
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #ff0 !important;
+}
+
+.section-header p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+@media (max-width: 767.98px){
+    .section-header h2{
+        font-size: 35px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 575.98px){
+    .section-header h2{
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+}
+
+/* ================================================= */
+/* ------------------ About Style ------------------ */
+/* ================================================= */
+
+#about{
+    position: relative;
+    padding: 45px 0 60px 0;
+    background: #656565;
+}
+
+#about hr{
+    width: 50%;
+    margin: 45px auto;
+    background: #212121;
+}
+
+#about .img-cols,
+#about .content-cols{
+    padding: 0;
+}
+
+#about .content-cols{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#about .img-col,
+#about .content-col{
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#about .content-col{
+    background: transparent;
+    padding: 30px;
+}
+
+#about .img-col{
+    overflow: hidden;
+}
+
+#about .img-col img{
+    transition: 0.4s;
+    width: 100%;
+}
+
+#about .img-col:hover img{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#about .content-col h3{
+    color: #ff0;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767.98px){
+    #about .content-col{
+        text-align: center;
+    }
+
+    #about .content-col h3{
+        font-weight: 400;
+        margin-top: 15px;
+    }
+}
+
+#about .content-col p{
+    color: #ddd;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#about .content-col a{
+    display: inline-block;
+    background: transparent;
+    color: #ff0;
+    border: 2px solid #ff0;
+    font-weight: 400;
+    padding: 10px 30px;
+}
+
+#about .content-col a:hover{
+    background: #ff0;
+    color: #212121;
+} 
+
+#about .content-col a:focus{
+    color: #fff;
+}
+
+/* ================================================= */
+/* ----------------- Amenities Style --------------- */
+/* ================================================= */
+
+#amenities {
+    position: relative;
+    padding: 45px 0 15px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#amenities.home-amenities {
+    max-height: 100%;
+    background-image: url('/images/amenities/amenities-1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#amenities.home-amenities:after {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#amenities .container {
+    position: relative;
+    z-index: 1;
+}
+
+#amenities.home-amenities h2,
+#amenities.home-amenities p {
+    color: #ffffff;
+}
+
+#amenities h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ff0;
+}
+
+#amenities .icons {
+    margin-bottom: 30px;
+}
+
+#amenities .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+#amenities .icon.icon-1 {
+    background-image: url(../images/icon/shield-hover.png);
+}
+
+#amenities .icon.icon-2 {
+    background-image: url(../images/icon/air-conditioner-hover.png);
+}
+
+#amenities .icon.icon-3 {
+    background-image: url(../images/icon/bathtub-hover.png);
+}
+
+#amenities .icon.icon-4 {
+    background-image: url(../images/icon/shower-hover.png);
+}
+
+#amenities .icon.icon-5 {
+    background-image: url(../images/icon/towel-hover.png);
+}
+
+#amenities .icon.icon-6 {
+    background-image: url(../images/icon/television-hover.png);
+}
+
+#amenities .icon.icon-7 {
+    background-image: url(../images/icon/wifi-hover.png);
+}
+
+#amenities .icon.icon-8 {
+    background-image: url(../images/icon/call-hover.png);
+}
+
+#amenities .icon.icon-9 {
+    background-image: url(../images/icon/towel-hover.png);
+}
+
+#amenities .icon.icon-10 {
+    background-image: url(../images/icon/kitchen-hover.png);
+}
+
+@media (max-width: 767.98px){
+    #amenities{
+        background: fixed;
+    }
+}
+
+/* ================================================= */
+/* ------------------ Rooms Style ------------------ */
+/* ================================================= */
+
+#rooms{
+    position: relative;
+    padding: 45px 0 60px 0;
+    background-color: #212121;
+}
+
+.section-header p{
+    color: #ddd;
+}
+
+#rooms .room-img,
+#rooms .rooms-des,
+#rooms .room-rate{
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.room-des p{
+    color: #ddd;
+}
+
+#rooms hr{
+    background-color: #656565;
+}
+
+#rooms .room-des{
+    width: 100%;
+    text-align: center;
+}
+
+#rooms .room-des h3 a{
+    color: #ff0;
+    text-decoration: none;
+}
+
+#rooms .room-img{
+    overflow: hidden;
+}
+
+#rooms .room-img img{
+    transition: 0.4s ease;
+}
+
+#rooms h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ff0;
+}
+
+#rooms .room-size{
+    margin: 0 0 25px 0;
+    padding: 0;
+    color: #ddd;
+}
+
+#rooms .room-size li{
+    display: inline-block;
+    font-size: 140x;
+    margin-right: 15px;
+    list-style-type: none;   
+}
+
+#rooms .room-size li i{
+    margin-right: 6px;
+}
+
+#rooms .room-icon{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#rooms .room-icon li{
+    list-style-type: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;                        /* user input  */
+    transition: 0.4s ease;
+}
+
+@media (max-width: 575.98px){
+    #rooms .room-icon li{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+#rooms .room-icon li.icon-1{
+    background-image: url(../images/icon/air-conditioner-hover.png);
+}
+
+#rooms .room-icon li.icon-2{
+    background-image: url(../images/icon/bathtub-hover.png);
+}
+
+#rooms .room-icon li.icon-3{
+    background-image: url(../images/icon/shower-hover.png);
+}
+
+#rooms .room-icon li.icon-4{
+    background-image: url(../images/icon/towel-hover.png);
+}
+
+#rooms .room-icon li.icon-5{
+    background-image: url(../images/icon/television-hover.png);
+}
+
+#rooms .room-icon li.icon-6{
+    background-image: url(../images/icon/wifi-hover.png);
+}
+
+#rooms .room-icon li.icon-7{
+    background-image: url(../images/icon/call-hover.png);
+}
+
+#rooms .room-icon li.icon-8{
+    background-image: url(../images/icon/kitchen-hover.png);
+}
+
+#rooms .room-rate{
+    text-align: center;
+}
+
+#rooms .room-rate h3{
+    color: #ff0;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#rooms .room-rate h1{
+    color: #ff0;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#rooms .room-rate a{
+    display: block;
+    padding: 7px 30px;
+    color: #ff0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#rooms .room-rate a:hover{
+    color: #222;
+    background: #ff0;
+} 
+
+/* ================================================= */
+/* ------------------ Modal Section ------------------ */
+/* ================================================= */
+
+
+.modal-content{
+    background-color: #212121;
+}
+
+.modal .modal-header button{
+    margin: 0 auto;
+    padding: 5px 8px;
+    font-size: 25px;
+    border-radius: 50%;
+    background: #ff0;
+    color: #000;
+}
+
+.modal .modal-body img{
+    height: 100%;
+    width: 100%;
+}
+
+.modal .modal-body h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #ff0;
+}
+
+.modal .modal-body p{
+    margin-bottom: 15px;
+    color: #ff0;
+}
+
+.modal .modal-body .modal-link{
+    position: relative;
+    text-align: center;
+}
+
+.modal .modal-body a{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 8px 30px;
+    background: transparent;
+    border: 2px solid #ff0;
+    color: #ff0;
+    cursor: pointer;
+}
+
+.modal .modal-body a:hover{
+    color: #222;
+    background: #ff0;
+}
+
+.modal .port-slider-nav .slick-track{
+    padding: 30px 0 15px 0;
+}
+
+.modal .port-slider-nav .slider-center img{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* ================================================= */
+/* ---------------- Subscribe Style ---------------- */
+/* ================================================= */
+
+#subscribe{
+    position: relative;
+    text-align: center;
+    padding: 45px 0 60px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url('/images/subscribe/subscribe-1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#subscribe .section-header::after{
+    background: #212121;
+}
+
+#subscribe .subscribe-form{
+    position: relative;
+    max-width: 525px;
+    width: 100%;
+    margin: auto;
+}
+
+#subscribe .subscribe-form input[type="email"]{
+    width: 100%;
+    border: 1px solid #fff;
+    height: 50px;
+    line-height: 24px;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+#subscribe .subscribe-form input[type="email"]:focus{
+    box-shadow: none;
+    outline: 0 none;
+}
+
+@media only screen and (max-width: 479px){
+    #subscribe .subscribe-form input[type="email"]{
+        text-align: center;
+    }
+}
+
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input::-ms-input-placeholder,
+input::-ms-input-placeholder{
+    color: #fff;
+}
+
+#subscribe .subscribe-form button{
+    font-size: 16px;
+    color: #212121;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 1px;
+    padding: 6px 30px;
+    margin-right: -1px;
+    background: #ff0;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#subscribe .subscribe-form button:hover{
+    color: #ff0;
+    background: #212121;
+    border: 1px solid #ff0;
+}
+
+#subdcribe .subscribe-form button:focus{
+    box-shadow: none;
+    outline: 0 none;
+}
+
+@media only screen and (max-width: 479px){
+    #subscribe .subscribe-form button{
+        position: static;
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+/* ================================================= */
+/* ----------------- Booking Style ----------------- */
+/* ================================================= */
+
+#booking{
+    position: relative;
+    padding: 45px 0 60px 0;
+    background: #212121;
+}
+
+#booking .container{
+    max-width: 990px;
+}
+
+#booking label{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#booking .form-control{
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    line-height: 24px;
+    padding: 20px;
+    background-color: transparent;
+    color: #ff0;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#booking .form-control:focus{
+    box-shadow: none;
+    outline: 0 none;
+}
+
+#booking .button button{
+    display: inline-block;
+    font-size: 16px;
+    color: #212121;
+    line-height: 24px;
+    padding: 10px 30px 8px 30px;
+    border-radius: 0;
+    background: #ff0;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#booking .button button:hover{
+    color: #ff0;
+    background: transparent;
+    border: 2px solid #ff0;
+}
+
+#booking .help-block ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#booking .dropdown-menu{
+    width: 230px;
+}
+
+
+/* ================================================= */
+/* ----------------- Call Us Style ----------------- */
+/* ================================================= */
+
+#call-us{
+    position: relative;
+    text-align: center;
+    padding: 45px 0 60px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url('/images/call-us/call-us-1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#call-us a{
+    display: inline-block;
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px solid #ff0;
+    color: #ff0;
+}
+
+#call-us a:hover{
+    background: #ff0;
+    color: #212121;
+}
+
+@media (max-width: 575.98px){
+    #call-us a{
+        padding: 10px 30px;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+/* ================================================= */
+/* ------------------ Contact Style ---------------- */
+/* ================================================= */
+
+#contact{
+    position: relative;
+    padding: 45px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url('/img/room/room-3.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact .container{
+    max-width: 900px;
+}
+
+#contact .contact-info{
+    margin-bottom: 30px;
+}
+
+#contact .contact-info .info-item{
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#contact .contact-info .info-item a{
+    color: #ddd;
+}
+
+#contact .contact-info .info-item p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#contact .contact-info .info-item i{
+    color: #ff0;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+#contact .contact-info .info-item h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ff0;
+}
+
+#contact .contact-info .info-item p{
+    margin: 0;
+    color: #ddd;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#contact .contact-form{
+    position: relative;
+}
+
+#contact label{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#contact .contact-form input[type="text"],
+#contact .contact-form input[type="email"]{
+    height: 45px;
+    font-size: 16px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ff0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#contact .contact-form textarea{
+    font-size: 16px;
+    font-weight: 200;
+    box-shadow: none;
+    border-radius: 0;
+    resize: none;
+    border: none;
+    color: #ff0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    textarea:focus,
+    input:focus{
+        font-size: 16px;
+        background: #fff;
+    }
+}
+
+#contact .contact-form button{
+    display: inline-block;
+    padding: 8px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0;
+    color: #ff0;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.4s ease;
+}
+
+#contact .contact-form button:hover{
+    color: #222;
+    background: #ff0;
+}
+
+#contact .help-block ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/* ================================================= */
+/* ------------------ Login Style ------------------ */
+/* ================================================= */
+
+#login{
+    position: relative;
+    padding: 45px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url('/img/room/room-3.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#login .container{
+    max-width: 900px;
+}
+
+@media (max-width: 767.98px){
+    #login .container .col-md-6:first-child{
+        margin-bottom: 30px;
+    }
+}
+
+#login .login-form{
+    position: relative;
+}
+
+#login .login-form .control-group{
+    margin-bottom: 15px;
+}
+
+#login .login-form .control-group{
+    margin-bottom: 15px;
+}
+
+#login .login-form label{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#login .login-form input[type="text"],
+#login .login-form input[type="email"],
+#login .login-form input[type="password"]{
+    height: 35px;
+    font-size: 16px;
+    font-weight: 200;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ff0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    input:focus{
+        font-size: 16px;
+        background: #fff;
+    }
+}
+
+#login .login-form input[type="text"]:focus,
+#login .login-form input[type="email"]:focus,
+#login .login-form input[type="password"]:focus{
+    border-color: #ff0;
+}
+
+#login .login-form button{
+    display: inline-block;
+    padding: 6px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0;
+    color: #ff0;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 0;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.4s ease;
+}
+
+#login .login-form button:hover{
+    color: #222;
+    background: #ff0;
+}
+
+/* ================================================= */
+/* ----------------- Footer Style ----------------- */
+/* ================================================= */
+
+#footer{
+    background: #212121;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+#footer .footer-top{
+    background: #212121;
+    border-bottom: 1px solid #666;
+    padding: 60px 0 30px 0;
+}
+  
+#footer .footer-top .footer-info{
+    margin-bottom: 30px;
+}
+  
+#footer .footer-top .footer-info h3{
+    font-size: 28px;
+    margin: 0 0 15px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    color: #ff0;
+}
+  
+#footer .footer-top .footer-info p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #fff;
+    letter-spacing: 1px;
+}
+  
+#footer .footer-top .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: #222;
+    color: #ff0;
+    border: 1px solid #ff0;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+  
+#footer .footer-top .social-links a:hover{
+    background: #ff0;
+    color: #222;
+    text-decoration: none;
+}
+  
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+}
+  
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
+  
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#footer .footer-top .footer-links ul i{
+    padding-right: 10px;
+    color: #ff0;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: normal;
+}
+  
+#footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+  
+#footer .footer-top .footer-links ul li:first-child{
+    padding-top: 0;
+}
+  
+#footer .footer-top .footer-links ul a{
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+  
+#footer .footer-top .footer-links ul a:hover{
+    color: #ff0;
+}
+  
+#footer .footer-top .footer-newsletter form{
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+}
+  
+#footer .footer-top .footer-newsletter form input[type=email]{
+    border: 0;
+    outline: none;
+    padding: 4px;
+    width: calc(100% - 110px);
+    border-radius: 50px;
+}
+  
+#footer .footer-top .footer-newsletter form input[type=submit]{
+    position: absolute;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #212121;
+    color: #ff0;
+    border: 2px solid #ff0;
+    transition: 0.3s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+  
+#footer .footer-top .footer-newsletter form input[type=submit]:hover{
+    background: #ff0;
+    color: #222;
+}
+  
+#footer .copyright{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+  
+#footer .credits{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+  
+#footer span{
+    color: #ff0;
+}
